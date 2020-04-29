@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- Header aligned to top -->
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#6D42E1"
+            android:gravity="left">
+
+            <Button
+                android:id="@+id/returnBtn"
+                style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#00FFFFFF"
+                android:drawableLeft="@android:drawable/ic_menu_revert" />
+        </RelativeLayout>
+
+        <!-- Footer aligned to bottom -->
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F8F8F8"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/homeBtn"
+                style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#00FFFFFF"
+                android:drawableLeft="?attr/actionModeCloseDrawable" />
+
+            <Button
+                android:id="@+id/searchBtn"
+                style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/homeBtn"
+                android:backgroundTint="#00FFFFFF"
+                android:drawableLeft="?android:attr/actionModeWebSearchDrawable" />
+
+            <Button
+                android:id="@+id/listBtn"
+                style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/searchBtn"
+                android:backgroundTint="#00FFFFFF"
+                android:drawableLeft="?android:attr/actionModeFindDrawable" />
+
+            <Button
+                android:id="@+id/shareBtn"
+                style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/listBtn"
+                android:backgroundTint="#00FFFFFF"
+                android:drawableLeft="?attr/actionModeShareDrawable" />
+
+        </RelativeLayout>
+
+        <!-- Content below header and above footer -->
+
+
+        <RelativeLayout
+            android:id="@+id/imagePanel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/stake" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contentPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/footer"
+            android:layout_below="@+id/imagePanel">
+
+            <TextView
+                android:id="@+id/idTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pochki sportsmena"
+                android:padding="25dp"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idTitle"
+                android:padding="25dp"
+                android:text="Dolores laborum magni qui. Sequi aut a quia blanditiis nam delectus et. Culpa ut quo quaerat quas rerum suscipit.
+Fuga saepe eos qui velit. Dolorem rerum veniam qui laudantium ea commodi.
+Dolores laborum magni qui. Sequi aut a quia blanditiis nam delectus et."
+                android:textColor="#000"
+                android:textSize="23sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
