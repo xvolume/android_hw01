@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <!-- Header aligned to top -->
+
         <RelativeLayout
             android:id="@+id/header"
             android:layout_width="match_parent"
@@ -29,7 +29,7 @@
                 android:drawableLeft="@android:drawable/ic_menu_revert" />
         </RelativeLayout>
 
-        <!-- Footer aligned to bottom -->
+
         <RelativeLayout
             android:id="@+id/footer"
             android:layout_width="match_parent"
@@ -79,7 +79,6 @@
 
         </RelativeLayout>
 
-        <!-- Content below header and above footer -->
 
 
         <RelativeLayout
@@ -108,7 +107,7 @@
                 android:id="@+id/idTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pochki sportsmena"
+                android:text="Pochki admina"
                 android:padding="25dp"
                 android:textColor="#000"
                 android:textSize="24sp"
